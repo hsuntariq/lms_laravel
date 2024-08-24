@@ -1,0 +1,73 @@
+:root {
+    --primary: #8338eb;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+html,
+body {
+    overflow-x: hidden !important;
+}
+.sign_up_form,
+.sign_in_form,
+.right,
+.left {
+    transition: all 0.7s;
+}
+
+.ball {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: radial-gradient(orange, red);
+    /* z-index: 222; */
+    left: 0;
+    top: 0%;
+    transform: translate(-30%, -30%);
+    animation: blobbing 5s ease-in-out infinite;
+}
+
+@keyframes blobbing {
+    0% {
+        border-radius: 58% 53% 24% 75% / 61% 76% 24% 47%;
+    }
+    25% {
+        border-radius: 57% 43% 20% 80% / 57% 83% 17% 43%;
+    }
+    50% {
+        border-radius: 79% 21% 44% 56% / 37% 23% 77% 63%;
+    }
+    75% {
+        border-radius: 35% 65% 75% 25% / 76% 55% 45% 24%;
+    }
+    100% {
+        border-radius: 58% 53% 24% 75% / 61% 76% 24% 47%;
+    }
+}
+.ball2 {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: radial-gradient(purple, magenta);
+    /* z-index: 222; */
+    right: 0;
+    bottom: 0%;
+    transform: translate(30%, 30%);
+    animation: blobbing 5s ease-in-out infinite;
+}
+
+.active {
+    background: #8338eb;
+    color: white;
+}
